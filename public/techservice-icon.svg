@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded square -->
+  <defs>
+    <linearGradient id="bgGradient" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9A825"/>
+      <stop offset="1" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="wrenchGradient" x1="160" y1="96" x2="384" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFE0B2"/>
+    </linearGradient>
+    <filter id="shadow" x="40" y="40" width="432" height="432" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="64" width="384" height="384" rx="96" fill="url(#bgGradient)"/>
+  </g>
+
+  <!-- Subtle inner border -->
+  <rect x="80" y="80" width="352" height="352" rx="88"
+        fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="4"/>
+
+  <!-- Wrench / tool icon -->
+  <g transform="translate(128 120)">
+    <!-- Handle -->
+    <rect x="156" y="172" width="40" height="144" rx="20" fill="url(#wrenchGradient)"/>
+    <!-- Head -->
+    <path d="M224 56C215 63 205 68 194 70C188 71 184 77 184 83V128L128 184L80 136L136 80H181C187 80 193 76 194 70C196 59 201 49 208 40C218 26 232 16 248 12C246 28 248 42 254 56C256 61 256 67 252 71L224 99C219 104 211 104 206 99L197 90C193 86 187 86 183 90C179 94 179 100 183 104L200 121C210 131 226 131 236 121L264 93C277 80 281 61 274 44C267 27 252 16 234 16C229 16 226 17 224 18"
+          fill="url(#wrenchGradient)"/>
+    <!-- Circular bolt detail -->
+    <circle cx="112" cy="232" r="24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="10"/>
+  </g>
+</svg>
